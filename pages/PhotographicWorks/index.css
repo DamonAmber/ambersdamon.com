@@ -1,11 +1,45 @@
 html {
     min-height: 100%;
     background-color: #21a675;
+    background-image: url(/img/zip/index-bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 body {
     margin: 0;
 }
 .main-containt {
     padding: 50px;
+    color: white;
+}
+.images-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.image-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.image-item:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+}
+.image-zip {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -75px;
     color: white;
 }
