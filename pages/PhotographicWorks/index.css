@@ -1,0 +1,11 @@
+html {
+    min-height: 100%;
+    background-color: #21a675;
+}
+body {
+    margin: 0;
+}
+.main-containt {
+    padding: 50px;
+    color: white;
+}

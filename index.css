@@ -1,0 +1,35 @@
+html {
+    min-height: 100%;
+    background-color: #21a675;
+}
+body {
+    margin: 0;
+}
+.main-containt {
+    padding: 50px;
+    color: white;
+}
+.main-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+.main-menu-item {
+    width: 300px;
+    height: 100px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(240, 88, 86, 0.9);
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+.main-menu-item:hover {
+    background-color: rgba(240, 88, 86, 1);
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
