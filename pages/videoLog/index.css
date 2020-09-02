@@ -4,44 +4,43 @@ html {
     background-image: url(/img/zip/index-bg.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+}
+.first-title {
+    font-size: 48px;
 }
 body {
     margin: 0;
+    width: 100%;
 }
-.main-containt {
-    padding: 20px;
+.main-content {
+    padding: 50px;
     color: white;
 }
-.images-container {
+.video-content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
+    min-width: 520px;
 }
-.image-item {
+.video-item {
     margin-right: 10px;
     margin-bottom: 10px;
-    transition: transform 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.image-item:hover {
-    cursor: pointer;
-    transform: scale(1.05, 1.05);
+.video {
+    width: 500px;
+    height: 500px;
 }
-.image-zip {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    object-position: 50% 50%;
-}
-.footer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    margin-left: -75px;
-    color: white;
+@media screen and (max-width: 1170px) {
+    .video-content {
+        flex-direction: column;
+align-content: center;
+
+    }
 }
