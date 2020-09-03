@@ -1,6 +1,5 @@
 html {
     min-height: 100%;
-    background-color: #21a675;
     background-image: url(/img/zip/index-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -44,4 +43,13 @@ body {
     left: 50%;
     margin-left: -75px;
     color: white;
+}
+@media screen and (max-width: 1170px) {
+    .image-item {
+        width: 100%;
+    }
+    .image-zip {
+        width: 100%;
+        height: 500px;
+    }
 }

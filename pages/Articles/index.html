@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Articles</title>
+        <link rel="icon" type="image/x-icon" href="/img/AD.png">
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <div class="main-containt" id="app">
+            <h1 class="first-title">Articles</h1>
+            <ul class="articles-list">
+                <li class="article-row" v-for="item in articles" >
+                    <a class="article-item" v-bind:href="item.url" target="_blank">
+                        <div class="article-name item">{{item.title}}</div>
+                        <div class="article-time item">{{item.time}}</div>
+                        <div class="article-tags item">
+                            <div class="tag" v-for="tag in item.tags">{{tag}}</div>
+                        </div>
+                        <div class="article-type item">{{item.type}}</div>
+                    </a>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

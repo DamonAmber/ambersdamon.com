@@ -40,7 +40,12 @@ body {
 @media screen and (max-width: 1170px) {
     .video-content {
         flex-direction: column;
-align-content: center;
-
+        align-content: center;
+    }
+    .video-item {
+        width: 100%;
+    }
+    .video {
+        width: 100%;
     }
 }
