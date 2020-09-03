@@ -6,6 +6,14 @@ html {
     background-position: center;
     display: flex;
 }
+.background-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    object-position: center;
+}
 .first-title {
     font-size: 48px;
 }

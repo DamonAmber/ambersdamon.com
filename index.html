@@ -5,16 +5,20 @@
         <link rel="icon" type="image/x-icon" href="./img/AD.png">
         <link rel="stylesheet" type="text/css" href="./index.css" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     </head>
     <body>
-        <div class="main-containt">
-            <h1 class="first-title">Amber's Damon</h1>
+        <img src="/img/zip/index-bg.jpg" class="background-image">
+        <div class="main-containt" id="app">
+            <div class="header">
+                <div class="first-title">Amber's Damon</div>
+                <div class="language-menu">
+                    <div class="language-item" v-on:click="changeLanguage('Chinese')">中文</div> / 
+                    <div class="language-item" v-on:click="changeLanguage('English')">English</div>
+                </div>
+            </div>
             <div class="main-menu">
-                <a class="main-menu-item" href="./pages/PhotographicWorks/index.html" target="_blank">Photographic works</a>
-                <a class="main-menu-item" href="./pages/videoLog/index.html" target="_blank">Video Logs</a>
-                <a class="main-menu-item" href="./pages/Articles/index.html" target="_blank">Articles</a>
-                <a class="main-menu-item">Webpage Demo</a>
-                <a class="main-menu-item">Paintings</a>
+                <a class="main-menu-item" v-for="item in languagePack[language].menu" v-bind:href="item.href" target="_blank">{{item.name}}</a>
             </div>
         </div>
         <script src="./index.js"></script>
