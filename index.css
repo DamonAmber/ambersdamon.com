@@ -20,6 +20,9 @@ html {
     align-items: center;
     font-size: 24px;
 }
+.language-item {
+    cursor: pointer;
+}
 body {
     margin: 0;
     background: url(/img/zip/index-bg.jpg);
